@@ -10,14 +10,37 @@
     height: calc(100vw / 2.1);
     background-repeat: no-repeat;
 }
-#logo{
+.logo{
+    width: 300px;
+    float: left;
+}
+.logo-2{
+    loat: left;
     width: 300px;
 }
-#link{
+.link{
     float: right;
     padding: 30px 0;
 }
-#link a{
+.link-2{
+    float: right;
+    padding: 30px 0;
+}
+.link-2 a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    font-weight: 800;
+    width: 0%;
+    transition: 1s all;
+    margin-top: 15px;
+}
+.link-2 a:hover{
+    width: 100%;
+    background-color: yellow;
+    color: #404040;
+}
+.link a{
     color: #fff;
     text-decoration: none;
     padding: 5px 15px;
@@ -25,7 +48,7 @@
     width: 0%;
     transition: 1s all;
 }
-#link a:hover{
+.link a:hover{
     width: 100%;
     background-color: yellow;
     color: #404040;
@@ -50,6 +73,7 @@ nav{
 }
 body{
     background-color: #fbf7f0;
+    text-align: center;
 }
 .title{
     font-size: 40px;
@@ -67,4 +91,67 @@ body{
 .title-box{
     text-align: center;
     color: #827e6c;
+}
+#product{
+    /*  */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    padding: 30px;
+    width: 980px;
+    margin: 0 auto;
+}
+#product img{
+    width: 100%;
+}
+.product-box a{
+    text-decoration: none;
+}
+.product-box h2{
+    color: #fbab13;
+    text-align: left;
+}
+.product-box p{
+    text-align:justify;
+    text-justify: distribute;
+    
+}
+.product-box hr{
+    height: 2px;
+    background-color: #bdac90;
+    margin: 10px 0;
+    border: none;
+}
+.btn-big{
+    display: inline-block;
+    width: 200px;
+    background-color: #642200;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 80px;
+    transition: 0.8s;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 2px solid #642200;
+}
+.btn-big:hover{
+    background-color: transparent;
+    
+    color: #642200
+}
+.small-line{
+    background-image: url(https://www.tanuki-koji.com/archive/image/customization/news_line.png);
+    height: 5px;
+    background-repeat:repeat-x;
+    padding-bottom: 20px;
+}
+footer{
+    background-color: #642200;
+    color: #fff;
+}
+footer #copy{
+    padding-top: 50px;
+    font-size: 0.5em;
+    position: relative;
+    right: 4px;
 }
